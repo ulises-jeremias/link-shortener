@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-linkshortener-dev-225337-authRole",
+      "UnauthRoleArn": "arn:aws:iam::692847204654:role/amplify-linkshortener-dev-225337-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::692847204654:role/amplify-linkshortener-dev-225337-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-linkshortener-dev-225337-deployment",
+      "UnauthRoleName": "amplify-linkshortener-dev-225337-unauthRole",
+      "StackName": "amplify-linkshortener-dev-225337",
+      "StackId": "arn:aws:cloudformation:us-west-2:692847204654:stack/amplify-linkshortener-dev-225337/5ae1c050-f4f2-11ec-98cd-0a57bb28f1af",
+      "AmplifyAppId": "d2l6cp31w7l8z0"
+    }
+  }
+}
