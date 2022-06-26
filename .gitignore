@@ -37,6 +37,9 @@ yarn-error.log*
 *.db-journal
 prisma/_sqlite/migrations
 
+# serverless
+/.serverless/
+/.serverless_nextjs/
 
 # testing
 playwright/test-results
