@@ -7,13 +7,13 @@ test('add and get a short link', async () => {
   const caller = appRouter.createCaller(ctx);
 
   const input: inferMutationInput<'short-link.createSlug'> = {
-    slug: 'slug',
+    slug: 'test1',
     url: 'URL',
   };
   const shortLink = await caller.mutation('short-link.createSlug', input);
-  const byId = await caller.query('short-link.slugCheck', {
+  const slugCheckResult = await caller.query('short-link.slugCheck', {
     slug: shortLink.slug,
   });
 
-  expect(byId).toMatchObject(input);
+  expect(slugCheckResult).toMatchObject({ used: true });
 });
