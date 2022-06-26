@@ -36,9 +36,12 @@ export const shortLinkRouter = createRouter()
       slug: z.string(),
     }),
     async resolve({ input }) {
-      return prisma.shortLink.findFirst({
-        where: input,
-        select: defaultShortLinkSelect,
+      const count = await prisma.shortLink.count({
+        where: {
+          slug: input.slug,
+        },
       });
+
+      return { used: count > 0 };
     },
   });
